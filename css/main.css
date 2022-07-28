@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+h1, h2 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+p, dl {
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: .75rem;
+  grid-template-areas:
+    "banner banner banner"
+    "col1 col2 col3";
+}
+
+div {
+  z-index: 1;
+  align-self: flex-end;
+  color: white;
+}
+
+img:first-child, div {
+  grid-area: banner;
+}
+
+dl dt {
+  font-style: italic;
+}
+
+figure {
+  margin: 0;
+}
